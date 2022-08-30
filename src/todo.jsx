@@ -37,7 +37,7 @@ function Todo(){
             <div className="main">
             <h1>TODO List</h1>
             <form onSubmit={AddTask}>
-            <input type="text" value={input} onChange={(e)=>{setInput(e.target.value)}}  required/>&nbsp;&nbsp;
+            <input type="text" value={input} onChange={(e)=>{setInput(e.target.value)}} maxLength="21"  required/>&nbsp;&nbsp;
             <button type="submit" >Add List</button>
             </form>
             <div className="list">
@@ -49,7 +49,7 @@ function Todo(){
                         <>
                         <div key={index} className="inner">
                             <div>
-                            <input type="text" value={edittxt}  onChange={(e)=>{setEditxt(e.target.value)}}></input>
+                            <input type="text" value={edittxt} maxLength="21"  onChange={(e)=>{setEditxt(e.target.value)}}></input>
                             </div>  
                             <div>
                             <button type="button" id="save" onClick={()=>Save(index)}>Save</button>&nbsp;&nbsp;
