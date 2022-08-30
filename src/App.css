@@ -1,16 +1,17 @@
 
 .main{
-  margin: auto;
+  margin:auto;
   width: 400px;
-  border: 2px dotted;
+  /* border: 2px dotted; */
   padding: 10px;
-  margin-top: 10px;
-  background-color: rgb(206, 240, 220);
+  margin-top: 50px;
+  /* background-color: rgb(206, 240, 220); */
   box-shadow: 4px 4px 20px 1px black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 .list{
   width: 300px;
@@ -23,6 +24,9 @@
 .inner{
   display: flex;  
   justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid silver;
 }
 form{
   width:300px;

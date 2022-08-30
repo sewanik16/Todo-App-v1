@@ -58,6 +58,7 @@ function Todo(){
                          </div>
                          </>
                         :
+                        <>
                         <div key={index} className="inner">
                         <div>
                         <label>{item}</label>
@@ -67,6 +68,7 @@ function Todo(){
                         <button type="button" onClick={()=>DeleteTask(index)} >Delete</button>
                         </div>
                         </div>
+                        </>
                     
                     )
                 })
