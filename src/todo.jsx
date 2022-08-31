@@ -18,16 +18,16 @@ function Todo(){
         setTask([...task])
     }
     let EditTask=(index)=>{
-        setEdit(index)
-        let i= task[index]
+        setEdit(index)     // edit=0
+        let i= task[index]   // task[0] == nikhil
         // setInput(i)
         setEditxt(i)
     }
     let Save=(index)=>{
-        setEdit(-1)
+        setEdit(-1)   //edit=-1
         // let editstr = task[index]
         // setEditxt(editstr)
-        task.splice(index,1,edittxt)
+        task.splice(index,1,edittxt)  // nkhi
         setInput(null)
     }
    
@@ -48,7 +48,7 @@ function Todo(){
                         edit === index ?
                         <>
                         <div key={index} className="inner">
-                            <div>
+                            <div>{index+1+".  "}
                             <input type="text" value={edittxt} maxLength="21"  onChange={(e)=>{setEditxt(e.target.value)}}></input>
                             </div>  
                             <div>
@@ -60,7 +60,7 @@ function Todo(){
                         :
                         <>
                         <div key={index} className="inner">
-                        <div>
+                        <div>{index+1+".  "}
                         <label>{item}</label>
                         </div>
                         <div>
